@@ -3,4 +3,27 @@
 }
 .App header {
   font-size: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tempLogo {
+  font-size: 60px;
+  text-align: center;
+}
+
+.time {
+  font-size: 10px;
+}
+form {
+  max-width: 100%;
+}
+.textBox {
+  width: 70%;
+}
+.searchButton {
+  width: 20%;
+}
+.temp {
+  font-size: 30px;
 }
