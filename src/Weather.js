@@ -3,7 +3,7 @@ import "./App.css";
 
 export default function Weather() {
   return (
-    <div className="App border border-black p-4 rounded-4 mb-3 mt-3">
+    <div className="Weather border border-black p-4 rounded-4 mb-5 mt-5">
       <form className="justify-content-center">
         <input
           type="text"
@@ -28,10 +28,12 @@ export default function Weather() {
                 </ul>
               </div>
             </div>
-            <div className="mainInfo row justify-content-start mt-3">
-              <div className="temp col-4">10 ℃</div>
-              <div className="otherInfo col-8">
-                <ul>
+            <div className="mainInfo row justify-content-start mt-3 ">
+              <div className="temp col-4 text-align-center border border-black pt-3 rounded-start">
+                10 ℃
+              </div>
+              <div className="otherInfo col-8 border border-black border-start-0 rounded-end pt-3">
+                <ul className="">
                   <li>Humidity: 66%</li>
                   <li>Wind speed: 7mph</li>
                 </ul>
@@ -41,6 +43,17 @@ export default function Weather() {
           <div className="tempLogo col-4 p-3">⛅️</div>
         </div>
       </div>
+      <footer className="m-3">
+        This project is coded by{" "}
+        <a href="https://github.com/cosylily" target="blank">
+          Hikari{" "}
+        </a>
+        and is open-sourced in{" "}
+        <a href="https://github.com/cosylily/react-astro-lily" target="blank">
+          Git Hub
+        </a>
+        .
+      </footer>
     </div>
   );
 }

@@ -1,19 +1,38 @@
-.App {
+.App,
+.Weather {
   font-family: "Roboto, Sans Family";
 }
 .App header {
   font-size: 50px;
   text-align: center;
   margin-top: 10px;
+  color: #e9e0dd;
 }
-
+.App {
+  background: #d4ccdc;
+  max-width: 800px;
+}
+.Weather {
+  height: 100%;
+  background-color: #e8e8f1;
+}
 .tempLogo {
   font-size: 60px;
   text-align: center;
 }
-
+.city {
+  font-size: 50px;
+  line-height: 40px;
+}
 .time {
   font-size: 10px;
+}
+.time li {
+  line-height: 10px;
+}
+.mainInfo {
+  background-color: rgba(227, 217, 218, 0.6);
+  color: #dacfd7;
 }
 form {
   max-width: 100%;
@@ -25,5 +44,12 @@ form {
   width: 20%;
 }
 .temp {
-  font-size: 30px;
+  font-size: 32px;
+}
+
+ul {
+  margin-left: -32px;
+}
+li {
+  list-style-type: none;
 }
