@@ -25,9 +25,9 @@ export default function Weatherinfo(props) {
               </div>
             </div>
           </div>
-          <div className="descriptions col-4 pt-3 ps-2 text-end">
-            <div className="tempLogo mt-2 mb-2">⛅️</div>
-            <div className="weatherDescribe text-uppercase">
+          <div className="descriptions col-4 pt-3 ps-2">
+            <img className="tempLogo mt-2 mb-2" src={props.info.iconURL}></img>
+            <div className="weatherDescribe text-uppercase text-align-center">
               {props.info.description}
             </div>
           </div>
