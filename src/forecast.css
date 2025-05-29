@@ -1,0 +1,24 @@
+:root {
+  --text-color: #9c898c;
+  --primary-color: #d4ccdc;
+  --secondary-color: #e8e8f1;
+  --secondary-text-color: #8d7297;
+  --font-type: "Roboto, Sans Family";
+}
+
+.forecast-day {
+  color: var(--text-color);
+  font-family: var(--font-type);
+}
+
+.forecast-temperature-max {
+  color: var(--secondary-text-color);
+}
+
+.forecast-temperature-min {
+  color: var(--text-color);
+}
+
+.forecast-temperatures {
+  justify-content: space-around;
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
 import Weatherinfo from "./Weatherinfo";
+import Weatherforecast from "./Weatherforecast"
 
 export default function Weather(props) {
   let [ready, setReady] = useState(false);
@@ -50,6 +51,7 @@ export default function Weather(props) {
           />
         </form>
         <Weatherinfo info={weatherData} />
+        <Weatherforecast/>
         <footer className="mt-3">
           This project is coded by{" "}
           <a href="https://github.com/cosylily" target="blank">
