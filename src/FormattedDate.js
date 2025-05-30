@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Formatteddate(props) {
-  console.log(props.timestamp);
   let day = props.timestamp.getDay();
   let year = props.timestamp.getFullYear();
   let month = props.timestamp.getMonth();
