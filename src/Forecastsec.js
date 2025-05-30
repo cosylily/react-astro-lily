@@ -25,8 +25,8 @@ export default function ForecastSection(props) {
         </div>{" "}
         <div className="forecast-temperatures d-flex justify-content-between">
           {" "}
-          <span className="forecast-temperature-max">{tempMax}</span>
-          <span className="forecast-temperature-min">{tempMin}</span>
+          <span className="forecast-temperature-max">{tempMax}°</span>
+          <span className="forecast-temperature-min">{tempMin}°</span>
         </div>
       </div>
     </div>

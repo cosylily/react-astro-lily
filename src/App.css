@@ -80,13 +80,7 @@ form {
   font-size: 32px;
   border-right: 1px solid var(--secondary-text-color);
 }
-.temp a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-.temp a:hover {
-  color: var(--primary-color);
-}
+
 ul {
   margin-left: -32px;
 }
