@@ -8,17 +8,27 @@ export default function Weatherforecast(props) {
   let [data, setData] = useState({});
   let [loaded, setLoaded] = useState(false);
   function handleForecastResponse(response) {
-    console.log(response.data);
     setLoaded(true);
-    setData({
-      icon: response.data.daily[1].condition.icon,
-      tempMax: Math.round(response.data.daily[1].temperature.maximum),
-      tempMin: Math.round(response.data.daily[1].temperature.minimum),
-      timestamp: new Date(response.data.daily[1].time * 1000),
-    });
+    setData(response.data.daily);
   }
   if (loaded) {
-    return <Forecastsection data={data} />;
+    return (
+      <div className="forecast">
+        <div className="row mt-3 mb-3">
+          {data.map(function (dailyForecast, index) {
+            if (index < 6 && index != 0) {
+              return (
+                <div className="col" key={index}>
+                  <Forecastsection data={dailyForecast} />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </div>
+      </div>
+    );
   } else {
     let apiKey = "3caeb6a7a0144t0bff6oc0e38972db67";
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${props.cityinfo}&key=${apiKey}`;
